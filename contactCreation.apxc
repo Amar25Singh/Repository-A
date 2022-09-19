@@ -30,4 +30,13 @@ public class CreateAccountAndCon{
         System.debug("Lead Records: "+l);
 
     }
+
+    public static void deleteAccount()
+    {
+        try{
+          //Add code for Delete records 
+
+
+    }
+
 }
