@@ -1,0 +1,33 @@
+//create a contact
+public class CreateAccountAndCon{
+    //Contact create method
+    public static void insertAccAndCon()
+    {
+        try{
+            //creating contact and account
+             Account acc = new Account();
+             acc.Name='Account1';
+             insert acc;   
+            Contact con= new Contact();
+            con.AccountId=acc.id;
+            con.LastName='Contact1';
+            insert con;
+
+           
+        }catch(Exception e)
+        {
+            //Inside Exception
+            System.debug('Exception due to--->: '+e.getCause());
+        }
+
+        Leasd l = new Lead();
+
+        l.Name = "Test Lead1"
+
+        insert l;
+
+        //Debug statement for lead records
+        System.debug("Lead Records: "+l);
+
+    }
+}
